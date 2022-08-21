@@ -1,0 +1,178 @@
+* {
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+:root {
+    --font-color: rgb(17, 17, 17);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    max-width: 270px;
+}
+
+.bg-image {
+    height: 50vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #1357BE, #3BFFE5);
+}
+
+.counter {
+    color: #fff;
+    font-size: 15px;
+    display: inline-flex; 
+    gap: 20px;
+    position: relative;
+    left: 110px;
+}
+
+.counter h4 {
+    font-size: 20px;
+}
+
+.bg-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-image h1 {
+    font-size: 25px;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+    line-height: 35px;
+    padding-bottom: 10px;
+}
+
+.bg-image p {
+    font-weight: 300;
+}
+
+.bg-image img {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.todo-input {
+    position: relative;
+    bottom: 120px;
+}
+
+.todo-input i {
+    position: relative;
+    top: .5px;
+    right: 13px;
+    background-color: #fff;
+    padding:16.8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-input i:hover {
+    transition: 0.8s;
+    color: #3BFFE5;
+}
+
+.todo-input input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.todo-input input:focus {
+    outline: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 20px;
+}
+
+.todo-list li{
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding-left: 45px;
+    color:rgb(89, 89, 89);
+    font-size: 15px;
+    line-height: 18px;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 80px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check-btn {
+    background-color: #fff;
+    outline: 1px solid rgb(181, 181, 181);
+    color: rgb(181, 181, 181);
+    border: none;
+    border-radius: 100%;
+    padding-top:2px;
+    position: relative; 
+    left: 35px;
+    bottom: 80px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.delete-btn {
+    width: 10px;
+    background: none;   
+    font-size: 20px;
+    color:rgb(159, 159, 159);
+    border: none;
+    margin: 0;
+    position: relative;
+    right: 26px;
+    bottom: 80px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+/* Removes a specific area to click */
+.fa-xmark,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.buttonColor {
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, #1357BE, #3BFFE5);
+}
